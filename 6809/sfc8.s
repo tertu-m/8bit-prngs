@@ -20,22 +20,22 @@ _random:
     inc RndD
     ;a' = b eor (b >> 2)
     lda RndB
-    lsr a
-    lsr a
+    lsra
+    lsra
     eora RndB
     sta RndA
     ;b' = c + (c << 1)
     lda RndC
-    asl a
+    asla
     adda RndC
     sta RndB
     ;c' = rol8(c, 3) + temp
     lda RndC
-    asl a
+    asla
     adca #0
-    asl a
+    asla
     adca #0
-    asl a
+    asla
     adca #0
     adda ,s
     sta RndC
