@@ -1,3 +1,5 @@
+;NOT TESTED
+
 ;Returns 1 random byte in A and B
 rand:
     ldab RndB
@@ -14,11 +16,11 @@ rand:
     adda RndC
     staa RndB
     ldaa RndC
-    rola
+    asla
     adca #0
-    rola
+    asla
     adca #0
-    rola
+    asla
     adca #0
     aba
     staa RndC

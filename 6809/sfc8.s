@@ -1,3 +1,4 @@
+;NOT TESTED
 ;SFC8 for 6809
 ;A port of SFC8 with constants by M. E. O'Neill based on Chris
 ;Doty-Humphrey's SFC PRNG scheme.
@@ -10,7 +11,7 @@
 _random:
     ;a, b, c, and d are the input variables
     ;a', b', c', d' are the outputs
-    
+
     ;temp (the result) = a + b + d
     lda RndA
     adda RndD
