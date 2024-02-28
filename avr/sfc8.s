@@ -1,3 +1,4 @@
+;Probably NOT TESTED
 ;Should work under the standard C calling convention.
 ;Assumes the random state is stored in the lds area.
 ;Uses 25 words and ~39 cycles (including ret).
@@ -15,7 +16,7 @@ rand:
     lds r0, RndD
     add r24, r0
     inc r0
-    sts RndD, r0 
+    sts RndD, r0
     mov r0, r18
     lsr r0
     lsr r0

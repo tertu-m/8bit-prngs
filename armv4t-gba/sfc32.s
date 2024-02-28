@@ -98,7 +98,7 @@ fn sfc32_rand thumb
     lsls r2, r3, #3
     adds r2, r2, r3
     @ c = rol(c, 21) + e
-    movs r6, #11
+    movs r6, #21
     rors r3, r3, r6
     adds r3, r3, r0
     subs r5, r5, #16
